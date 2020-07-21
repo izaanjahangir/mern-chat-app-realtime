@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 
-const globalHelpers = require("./utils/globalHelpers");
-const keys = require("./config/keys");
+const globalHelpers = require("./src/utils/globalHelpers");
+const keys = require("./src/config/keys");
 
 // Global error handler
 app.use((err, req, res, next) => {
