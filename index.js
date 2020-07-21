@@ -4,6 +4,8 @@ const app = express();
 const globalHelpers = require("./src/utils/globalHelpers");
 const keys = require("./src/config/keys");
 
+require("./src/routes")(app);
+
 // Global error handler
 app.use((err, req, res, next) => {
   const error = globalHelpers.handleMongooseError(err.message);
