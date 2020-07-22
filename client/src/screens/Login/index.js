@@ -48,6 +48,12 @@ export default function Login(props) {
     props.history.push("/register");
   }
 
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    props.history.push("/");
+  }
+
   return (
     <Container className={classes.container} maxWidth="xs">
       <CssBaseline />
@@ -58,7 +64,7 @@ export default function Login(props) {
         <Typography component="h1" variant="h5">
           Sign in
         </Typography>
-        <form className={classes.form} noValidate>
+        <form onSubmit={handleSubmit} className={classes.form} noValidate>
           <TextInput
             variant="outlined"
             margin="normal"
