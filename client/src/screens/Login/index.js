@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
   },
   submit: {
-    margin: theme.spacing(3, 0, 2),
+    margin: theme.spacing(2, 0, 2),
   },
   extra: {
     backgroundColor: "red",
@@ -62,6 +62,7 @@ export default function Login() {
             name="email"
             autoComplete="email"
             autoFocus
+            size="small"
           />
           <TextInput
             variant="outlined"
@@ -73,6 +74,7 @@ export default function Login() {
             type="password"
             id="password"
             autoComplete="current-password"
+            size="small"
           />
 
           <Button

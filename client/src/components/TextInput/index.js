@@ -13,6 +13,7 @@ function TextInput(props) {
       type={props.type}
       id={props.id}
       autoComplete={props.autoComplete}
+      size={props.size}
     />
   );
 }
@@ -23,6 +24,7 @@ TextInput.defaultProps = {
   fullWidth: true,
   label: "",
   type: "text",
+  size: "normal",
 };
 
 export default TextInput;
