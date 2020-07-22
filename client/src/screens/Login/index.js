@@ -1,7 +1,6 @@
 import React from "react";
 import Avatar from "@material-ui/core/Avatar";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import TextField from "@material-ui/core/TextField";
 import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
@@ -9,6 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
+import TextInput from "../../components/TextInput";
 import Button from "../../components/Button";
 
 const useStyles = makeStyles((theme) => ({
@@ -48,7 +48,7 @@ export default function Login() {
           Sign in
         </Typography>
         <form className={classes.form} noValidate>
-          <TextField
+          <TextInput
             variant="outlined"
             margin="normal"
             required
@@ -59,7 +59,7 @@ export default function Login() {
             autoComplete="email"
             autoFocus
           />
-          <TextField
+          <TextInput
             variant="outlined"
             margin="normal"
             required
