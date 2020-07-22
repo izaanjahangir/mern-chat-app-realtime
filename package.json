@@ -10,7 +10,8 @@
   },
   "scripts": {
     "start": "node index",
-    "dev": "nodemon start"
+    "dev": "nodemon start",
+    "client": "cd client && npm start"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
