@@ -14,6 +14,7 @@ function TextInput(props) {
       id={props.id}
       autoComplete={props.autoComplete}
       size={props.size}
+      autoFocus={props.autoFocus}
     />
   );
 }

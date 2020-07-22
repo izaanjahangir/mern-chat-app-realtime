@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     display: "flex",
     alignItems: "center",
+    flex: 1,
   },
   paper: {
     display: "flex",
@@ -38,11 +39,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Login() {
+export default function Login(props) {
   const classes = useStyles();
 
+  function navigate(e) {
+    e.preventDefault();
+
+    props.history.push("/register");
+  }
+
   return (
-    <Container className={[classes.container, "flex1"]} maxWidth="xs">
+    <Container className={classes.container} maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
@@ -93,7 +100,7 @@ export default function Login() {
               </Link> */}
             </Grid>
             <Grid item>
-              <Link href="#" variant="body2">
+              <Link className="pointer" onClick={navigate} variant="body2">
                 Don't have an account? Sign Up
               </Link>
             </Grid>
