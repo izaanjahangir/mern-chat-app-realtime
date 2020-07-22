@@ -12,8 +12,12 @@ import TextInput from "../../components/TextInput";
 import Button from "../../components/Button";
 
 const useStyles = makeStyles((theme) => ({
+  container: {
+    height: "100%",
+    display: "flex",
+    alignItems: "center",
+  },
   paper: {
-    marginTop: theme.spacing(8),
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -38,7 +42,7 @@ export default function Login() {
   const classes = useStyles();
 
   return (
-    <Container component="main" maxWidth="xs">
+    <Container className={[classes.container, "flex1"]} maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
@@ -70,10 +74,7 @@ export default function Login() {
             id="password"
             autoComplete="current-password"
           />
-          {/* <FormControlLabel
-            control={<Checkbox value="remember" color="primary" />}
-            label="Remember me"
-          /> */}
+
           <Button
             type="submit"
             fullWidth
