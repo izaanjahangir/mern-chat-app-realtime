@@ -68,7 +68,6 @@ export default function Login(props) {
             label="Email Address"
             name="email"
             autoComplete="email"
-            autoFocus
             size="small"
           />
           <TextInput
