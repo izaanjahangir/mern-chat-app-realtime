@@ -1,30 +1,33 @@
 import React from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import Grid from "@material-ui/core/Grid";
 
-const useStyles = makeStyles((theme) => ({
-  container: {
-    height: "100%",
-    display: "flex",
-    alignItems: "center",
-    flex: 1,
-  },
-  paper: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  },
-}));
+import useStyles from "./style";
 
 function Home() {
   const classes = useStyles();
 
   return (
-    <Container className={classes.container} maxWidth="xs">
+    <Container className={classes.container}>
       <CssBaseline />
-      <div className={classes.paper}>
-        <p>Home</p>
+      <div className={classes.boxContainer}>
+        <Grid container>
+          <Grid
+            className={classes.leftContainer}
+            item
+            xs={12}
+            sm={5}
+            md={4}
+          ></Grid>
+          <Grid
+            className={classes.rightContainer}
+            item
+            xs={12}
+            sm={7}
+            md={8}
+          ></Grid>
+        </Grid>
       </div>
     </Container>
   );
