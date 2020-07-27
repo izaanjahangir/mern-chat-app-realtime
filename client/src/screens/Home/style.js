@@ -25,11 +25,24 @@ const useStyles = makeStyles((theme) => ({
     borderTopLeftRadius: 10,
     borderBottomLeftRadius: 10,
     backgroundColor: colors.PRIMARY_DARK,
+    [theme.breakpoints.down("sm")]: {
+      position: "fixed",
+      top: 0,
+      left: 0,
+      width: "300px",
+      height: "100%",
+      borderTopLeftRadius: 0,
+      borderBottomLeftRadius: 0,
+    },
   },
   rightContainer: {
     borderTopRightRadius: 10,
     borderBottomRightRadius: 10,
     backgroundColor: colors.WHITE,
+    [theme.breakpoints.down("sm")]: {
+      borderTopLeftRadius: 10,
+      borderBottomLeftRadius: 10,
+    },
   },
 }));
 

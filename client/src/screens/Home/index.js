@@ -17,14 +17,12 @@ function Home() {
             className={classes.leftContainer}
             item
             xs={12}
-            sm={5}
             md={4}
           ></Grid>
           <Grid
             className={classes.rightContainer}
             item
             xs={12}
-            sm={7}
             md={8}
           ></Grid>
         </Grid>
