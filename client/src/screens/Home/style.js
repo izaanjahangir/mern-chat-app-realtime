@@ -5,6 +5,7 @@ import colors from "../../config/colors";
 const useStyles = makeStyles((theme) => ({
   container: {
     height: "100%",
+    maxHeight: "100vh",
     display: "flex",
     alignItems: "center",
     flex: 1,
@@ -20,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     display: "flex",
     borderRadius: 50,
+    backgroundColor: "red",
   },
   leftContainer: {
     borderTopLeftRadius: 10,
@@ -33,7 +35,10 @@ const useStyles = makeStyles((theme) => ({
       height: "100%",
       borderTopLeftRadius: 0,
       borderBottomLeftRadius: 0,
+      maxHeight: "100vh",
     },
+    overflowY: "scroll",
+    maxHeight: `calc(100vh - ${theme.spacing(2) + theme.spacing(2)}px)`,
   },
   rightContainer: {
     borderTopRightRadius: 10,
@@ -43,25 +48,6 @@ const useStyles = makeStyles((theme) => ({
       borderTopLeftRadius: 10,
       borderBottomLeftRadius: 10,
     },
-  },
-  avatarContainer: {
-    width: theme.spacing(7),
-  },
-  avatar: {
-    width: theme.spacing(5),
-    height: theme.spacing(5),
-  },
-  userDetailsContainer: {
-    display: "flex",
-    flexDirection: "column",
-    flex: 1
-  },
-  username: {
-    color: "white",
-    fontWeight: "bold",
-  },
-  message: {
-    color: "white",
   },
 }));
 

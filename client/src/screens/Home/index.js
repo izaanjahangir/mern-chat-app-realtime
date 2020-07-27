@@ -18,6 +18,18 @@ function Home() {
           <Grid className={classes.leftContainer} item xs={12} md={4}>
             <List component="nav" aria-label="secondary mailbox folders">
               <MessageList />
+              <MessageList />
+              <MessageList />
+              <MessageList />
+              <MessageList />
+              <MessageList />
+              <MessageList />
+              <MessageList />
+              <MessageList />
+              <MessageList />
+              <MessageList />
+              <MessageList />
+          
             </List>
           </Grid>
           <Grid className={classes.rightContainer} item xs={12} md={8}></Grid>
