@@ -40,6 +40,11 @@ const useStyles = makeStyles((theme) => ({
     overflowY: "scroll",
     maxHeight: `calc(100vh - ${theme.spacing(2) + theme.spacing(2)}px)`,
   },
+  headerContainer: {
+    paddingTop: theme.spacing(1),
+    display: "flex",
+    justifyContent: "flex-end",
+  },
   rightContainer: {
     borderTopRightRadius: 10,
     borderBottomRightRadius: 10,
