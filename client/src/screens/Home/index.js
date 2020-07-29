@@ -6,6 +6,7 @@ import List from "@material-ui/core/List";
 
 import Header from "./components/Header";
 import ChatHeader from "./components/ChatHeader";
+import MessageInputArea from "./components/MessageInputArea";
 import MessageList from "../../components/MessageList";
 import useStyles from "./style";
 
@@ -38,6 +39,7 @@ function Home() {
             <div className={classes.rightInnerContainer}>
               <ChatHeader />
               <div style={{ flex: 1, backgroundColor: "red" }}></div>
+              <MessageInputArea />
             </div>
           </Grid>
         </Grid>
