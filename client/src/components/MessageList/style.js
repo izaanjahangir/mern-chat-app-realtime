@@ -1,7 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-import colors from "../../config/colors";
-
 const useStyles = makeStyles((theme) => ({
   avatarContainer: {
     width: theme.spacing(7),
