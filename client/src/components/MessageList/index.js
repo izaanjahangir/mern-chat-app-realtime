@@ -1,10 +1,10 @@
 import React from "react";
 import ListItem from "@material-ui/core/ListItem";
-import Avatar from "@material-ui/core/Avatar";
 import Typography from "@material-ui/core/Typography";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 
+import Avatar from "../../components/Avatar";
 import useStyles from "./style";
 
 function MessageList() {
@@ -29,7 +29,6 @@ function MessageList() {
         <Avatar
           alt="username"
           src={require("../../assets/images/avatar.jpg")}
-          className={classes.avatar}
         />
       </ListItemAvatar>
       <ListItemText
