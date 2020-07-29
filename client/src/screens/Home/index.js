@@ -35,7 +35,10 @@ function Home() {
             </List>
           </Grid>
           <Grid className={classes.rightContainer} item xs={12} md={8}>
-            <ChatHeader />
+            <div className={classes.rightInnerContainer}>
+              <ChatHeader />
+              <div style={{ flex: 1, backgroundColor: "red" }}></div>
+            </div>
           </Grid>
         </Grid>
       </div>

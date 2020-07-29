@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
       borderTopLeftRadius: 0,
       borderBottomLeftRadius: 0,
       maxHeight: "100vh",
+      zIndex: 1,
     },
     overflowY: "scroll",
     maxHeight: `calc(100vh - ${theme.spacing(2) + theme.spacing(2)}px)`,
@@ -55,9 +56,14 @@ const useStyles = makeStyles((theme) => ({
       borderBottomLeftRadius: 10,
     },
   },
+  rightInnerContainer: {
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+  },
   moreIcon: {
     width: "20px",
-    cursor: "pointer"
+    cursor: "pointer",
   },
 }));
 
