@@ -41,7 +41,8 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: `calc(100vh - ${theme.spacing(2) + theme.spacing(2)}px)`,
   },
   headerContainer: {
-    paddingTop: theme.spacing(1),
+    paddingTop: theme.spacing(2),
+    paddingRight: theme.spacing(1),
     display: "flex",
     justifyContent: "flex-end",
   },
@@ -53,6 +54,10 @@ const useStyles = makeStyles((theme) => ({
       borderTopLeftRadius: 10,
       borderBottomLeftRadius: 10,
     },
+  },
+  moreIcon: {
+    width: "20px",
+    cursor: "pointer"
   },
 }));
 
