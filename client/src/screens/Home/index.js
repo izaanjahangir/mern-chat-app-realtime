@@ -38,7 +38,7 @@ function Home() {
           <Grid className={classes.rightContainer} item xs={12} md={8}>
             <div className={classes.rightInnerContainer}>
               <ChatHeader />
-              <div style={{ flex: 1, backgroundColor: "red" }}></div>
+              <div className={classes.messageContainer}></div>
               <MessageInputArea />
             </div>
           </Grid>

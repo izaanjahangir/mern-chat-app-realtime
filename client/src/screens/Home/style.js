@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     display: "flex",
     borderRadius: 50,
-    backgroundColor: "red",
   },
   leftContainer: {
     borderTopLeftRadius: 10,
@@ -64,6 +63,9 @@ const useStyles = makeStyles((theme) => ({
   moreIcon: {
     width: "20px",
     cursor: "pointer",
+  },
+  messageContainer: {
+    flex: 1
   },
 }));
 
