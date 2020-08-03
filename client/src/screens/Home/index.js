@@ -4,6 +4,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import List from "@material-ui/core/List";
 
+import Message from "../../components/Message";
 import Header from "./components/Header";
 import ChatHeader from "./components/ChatHeader";
 import MessageInputArea from "./components/MessageInputArea";
@@ -38,7 +39,10 @@ function Home() {
           <Grid className={classes.rightContainer} item xs={12} md={8}>
             <div className={classes.rightInnerContainer}>
               <ChatHeader />
-              <div className={classes.messageContainer}></div>
+              <div className={classes.messageContainer}>
+                <Message />
+                <Message currentUser={false} />
+              </div>
               <MessageInputArea />
             </div>
           </Grid>
