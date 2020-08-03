@@ -4,6 +4,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import List from "@material-ui/core/List";
 
+// import NoMessage from "./components/NoMessage";
 import Message from "../../components/Message";
 import Header from "./components/Header";
 import ChatHeader from "./components/ChatHeader";
@@ -45,6 +46,7 @@ function Home() {
               </div>
               <MessageInputArea />
             </div>
+            {/* <NoMessage /> */}
           </Grid>
         </Grid>
       </div>
