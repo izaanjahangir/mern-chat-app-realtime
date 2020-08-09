@@ -4,8 +4,8 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import List from "@material-ui/core/List";
 
+import Loader from "../../components/Loader";
 // import NoMessage from "./components/NoMessage";
-import Message from "../../components/Message";
 import Header from "./components/Header";
 import ChatHeader from "./components/ChatHeader";
 import MessageInputArea from "./components/MessageInputArea";
@@ -23,6 +23,9 @@ function Home() {
           <Grid className={classes.leftContainer} item xs={12} md={4}>
             <Header />
             <List component="nav" aria-label="secondary mailbox folders">
+              {/* <div style={{ textAlign: "center" }}>
+                <Loader />
+              </div> */}
               <MessageList />
               <MessageList />
               <MessageList />
@@ -41,8 +44,11 @@ function Home() {
             <div className={classes.rightInnerContainer}>
               <ChatHeader />
               <div className={classes.messageContainer}>
-                <Message />
-                <Message currentUser={false} />
+                {/* <Message />
+                <Message currentUser={false} /> */}
+                <div style={{ textAlign: "center" }}>
+                  <Loader />
+                </div>
               </div>
               <MessageInputArea />
             </div>

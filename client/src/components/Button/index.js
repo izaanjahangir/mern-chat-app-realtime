@@ -20,7 +20,7 @@ Button.defaultProps = {
   fullWidth: false,
   variant: "contained",
   color: "primary",
-  className: [],
+  className: "",
 };
 
 export default Button;
